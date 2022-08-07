@@ -1,0 +1,41 @@
+#works-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+.works-title{
+    margin-bottom: 50px;
+}
+.works-title p {
+    font-style: italic;
+}
+.works-recently{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.works-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:100px;
+   
+}
+.works-card p{
+    color: #4169e1;
+    font-weight: bold;    
+    margin-bottom: 5px;
+}
+
+.works-card img{
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}

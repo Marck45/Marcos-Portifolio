@@ -1,0 +1,42 @@
+#technology{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 5rem;
+    
+}
+
+#technology h1{
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.Develops{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.front-end, .back-end, .suports{
+    height: 500px;
+    width: 31%;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.front-end h3, .back-end h3, .suports h3{
+    border-bottom: 1px solid #3498DB;
+}
+
+.front-end h5, .back-end h5, .suports h5{
+    color: #3498DB;
+    font-weight: bold;
+}

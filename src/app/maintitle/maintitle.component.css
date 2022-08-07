@@ -1,0 +1,34 @@
+#about{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 0 2rem;
+}
+
+.about-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 50px;
+
+}
+
+.about-conteiner h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.about-conteiner p {
+    text-align: center;
+    font-size: 28px;
+}
+
+.about-conteiner img{
+    height: 200px;
+    width: 200px;
+}
+
+
