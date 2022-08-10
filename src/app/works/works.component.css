@@ -10,9 +10,7 @@
 .works-title{
     margin-bottom: 50px;
 }
-.works-title p {
-    font-style: italic;
-}
+
 .works-recently{
     display: flex;
     justify-content: space-between;

@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
 
   constructor( ) { 
   
-    this.iconWhats = '';
+    this.iconWhats = '<i class="fa-brands fa-whatsapp"></i>';
     this.linkGithub = 'https://github.com/Marck45';
     
   }

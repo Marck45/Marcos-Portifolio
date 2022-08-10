@@ -20,11 +20,10 @@
     height: 70%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 50px;
-    border: 2px solid #fff;
 }
 
 .social-footer a {
@@ -33,6 +32,12 @@
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 18px;
+}
+.social-footer a:hover{
+background-color: #F2FDF1;
+color: #000;
+border-radius: 5px;
+padding: 5px;
 }
 
 .social-footer p{

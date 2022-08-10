@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     background-color: #000;
     color: #F2FDF1;
+    max-height: 35vh;
 }
 
 .title-nav {
@@ -24,6 +25,12 @@
     text-decoration: none;
     color: #F2FDF1;
 }
+.title-nav ul li a:hover{
+    background-color: #F2FDF1;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 .nav-hello {
     display: flex;
@@ -36,8 +43,8 @@
 
 .nav-hello h1 {
     font-weight: 700;
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 25px;
 }
 
 .nav-social {
