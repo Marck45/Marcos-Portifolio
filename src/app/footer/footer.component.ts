@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  iconWhats: String = '';
+
   linkGithub: string = ''
   
   faceLink: String = 'https://www.facebook.com/MarcosCarvalhoA/';
@@ -18,8 +18,7 @@ export class FooterComponent implements OnInit {
   
 
   constructor( ) { 
-  
-    this.iconWhats = '<i class="fa-brands fa-whatsapp"></i>';
+
     this.linkGithub = 'https://github.com/Marck45';
     
   }
