@@ -40,3 +40,28 @@
     color: #3498DB;
     font-weight: bold;
 }
+
+
+@media only screen and (min-width: 320px ) and (max-width: 767px) {
+    .front-end, .back-end, .suports{
+        height: 500px;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .Develops{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+
+}
