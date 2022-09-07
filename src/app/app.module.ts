@@ -10,6 +10,8 @@ import { WorksComponent } from './works/works.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
+import { ContactsComponent } from './component/contacts/contacts.component';
+import { LoaderModule } from './loader/loader.module';
 
 
 
@@ -21,6 +23,7 @@ import { CommonModule } from '@angular/common';
     TechnologyComponent,
     WorksComponent,
     FooterComponent,
+    ContactsComponent,
 
   ],
   imports: [
@@ -29,6 +32,7 @@ import { CommonModule } from '@angular/common';
     FontAwesomeModule,
     CommonModule,
     RouterModule,
+    LoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

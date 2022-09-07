@@ -3,6 +3,12 @@
  align-items: center;
  justify-content: center;
  padding: 0 2rem;
+ height: 80vh;
+ margin-bottom: 100px;
+ background-color: #32CD32;
+ border-bottom-left-radius: 25%;
+ border-bottom-right-radius: 25%;
+ color: #21618C;
 }
 
 .about-conteiner {
@@ -10,9 +16,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    margin-bottom: 50px;
-
 }
 
 .about-conteiner h4 {
@@ -27,6 +30,7 @@
 }
 
 .about-conteiner img{
+    margin-bottom: 50px;
     height: 200px;
     width: 200px;
 }
