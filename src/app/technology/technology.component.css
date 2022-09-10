@@ -1,6 +1,7 @@
 #technology{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
     padding: 5rem;
@@ -25,7 +26,7 @@
 }
 
 .front-end, .back-end, .suports{
-    height: 500px;
+    min-height: 500px;
     width: 31%;
     padding: 2rem;
     display: flex;
@@ -46,8 +47,16 @@
     font-weight: bold;
 }
 
+@media only screen and (min-width: 768px ) and (max-width: 1023) {
 
-@media only screen and (min-width: 320px ) and (max-width: 767px) {
+    .Develops{
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;    
+    }
+
     .front-end, .back-end, .suports{
         height: 500px;
         width: 100%;
@@ -60,13 +69,44 @@
         margin-bottom: 15px;
     }
 
+}
+
+
+@media only screen and (min-width: 320px ) and (max-width: 767px) {
+
+    #technology{
+
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        padding: 5rem;
+        height: 1000px;
+        margin-bottom: 700px;
+        background-color: #32CD32;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+
+    }
+    .front-end, .back-end, .suports{
+    
+        height: 500px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+
     .Develops{
+        margin-top: 800px;
+        height: 500px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column;
-    
+        flex-direction: column;    
     }
-
 
 }

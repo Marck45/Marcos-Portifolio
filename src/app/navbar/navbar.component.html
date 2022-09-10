@@ -9,18 +9,21 @@
             <!-- <li><a routerLink="Social">SOCIAL NETWORKS</a></li> -->
         </ul>
     </div>
-    <div class="menu-burgers">
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-                <li><a routerLink="">Home</a></li>
-                <li><a routerLink="technology">Technology</a></li>
-                <li><a routerLink="works">Works</a></li>
-                <!-- <li><a routerLink="Studies">Studies</a></li> -->
-                <li><a routerLink="contacts">Contacts</a></li>
-                <!-- <li><a routerLink="Social">Social networks</a></li> -->
-            </ul>
-        </label>
-    </div>
+    <div id="menu">
+        <div id="menu-bar" (click)="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a routerLink="">HOME</a></li>
+            <li><a routerLink="technology">TECHNOLOGY</a></li>
+            <li><a routerLink="works">WORKS</a></li>
+            <li><a routerLink="contacts">CONTACTS</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
 </header>

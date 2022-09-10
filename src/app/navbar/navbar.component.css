@@ -31,7 +31,7 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 2560px) {
-    .menu-burgers {
+    #menu {
         display: none;
     }
 }
@@ -47,114 +47,98 @@
         display: none;
     }
 
-    label .menu {
-        position: absolute;
-        margin-top: 5px;
-        background: #FFF;
-        border-radius: 50% 50% 50% 50%;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-        cursor: pointer
+    #menu {
+        z-index: 2;
     }
 
-    label .hamburger {
-        position: absolute;
-        left: 50px;
-        width: 30px;
-        height: 2px;
-        background: #17202A;
-        display: block;
-        -webkit-transform-origin: center;
-        transform-origin: center;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
     }
 
-    label .hamburger:after,
-    label .hamburger:before {
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        content: "";
-        position: absolute;
-        display: block;
+    .bar {
+        height: 5px;
         width: 100%;
-        height: 100%;
-        background: #17202A;
-        cursor: default;
+        background-color: #21618C;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
     }
 
-    label .hamburger:before {
-        top: -10px;
+    #bar1 {
+        transform: translateY(-4px);
     }
 
-    label .hamburger:after {
-        bottom: -10px;
+    #bar3 {
+        transform: translateY(4px);
     }
 
-    label input {
+    .nav {
+        transition: 0.3s ease;
         display: none;
     }
 
-    label input:checked+.menu {
-        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-        border-radius: 0;
-
+    .nav ul {
+        padding: 0 22px;
     }
 
-    label input:checked+.menu .hamburger {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-
+    .nav li {
+        list-style: none;
+        padding: 12px 0;
     }
 
-    label input:checked+.menu .hamburger:after {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        bottom: 0;
-
-    }
-
-    label input:checked+.menu .hamburger:before {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        top: 0;
-
-    }
-
-    label input:checked+.menu+ul {
-        opacity: 1;
-    }
-
-    label ul {
-        z-index: 200;
-        position: absolute;
-        top: 15%;
-        left: 20%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        -webkit-transition: .25s 0s ease-in-out;
-        transition: .25s 0s ease-in-out;
-    }
-
-    label a {
-        margin-bottom: 1em;
-        display: block;
-        color: #21618C;
-        font-weight: bold;
+    .nav li a {
+        color: #32CD32;
+        font-size: 20px;
         text-decoration: none;
-
     }
 
-    h1 {
+    .nav li a:hover {
+        font-weight: bold;
+    }
+
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 80%;
-        text-align: center;
+    }
+
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background: radial-gradient(circle, #21618C, #21618C);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: #21618C;
+    }
+
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+        width: 620px;
+        height: 560px;
+        transform: translate(-60%, -30%);
     }
 }
 
@@ -168,113 +152,97 @@
         display: none;
     }
 
-    label .menu {
-        position: absolute;
-        margin-top: 5px;
-        background: #FFF;
-        border-radius: 50% 50% 50% 50%;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-        cursor: pointer
+    #menu {
+        z-index: 2;
     }
 
-    label .hamburger {
-        position: absolute;
-        left: 50px;
-        width: 30px;
-        height: 2px;
-        background: #17202A;
-        display: block;
-        -webkit-transform-origin: center;
-        transform-origin: center;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
     }
 
-    label .hamburger:after,
-    label .hamburger:before {
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        content: "";
-        position: absolute;
-        display: block;
+    .bar {
+        height: 5px;
         width: 100%;
-        height: 100%;
-        background: #17202A;
-        cursor: default;
+        background-color: #21618C;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
     }
 
-    label .hamburger:before {
-        top: -10px;
+    #bar1 {
+        transform: translateY(-4px);
     }
 
-    label .hamburger:after {
-        bottom: -10px;
+    #bar3 {
+        transform: translateY(4px);
     }
 
-    label input {
+    .nav {
+        transition: 0.3s ease;
         display: none;
     }
 
-    label input:checked+.menu {
-        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-        border-radius: 0;
-
+    .nav ul {
+        padding: 0 22px;
     }
 
-    label input:checked+.menu .hamburger {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-
+    .nav li {
+        list-style: none;
+        padding: 12px 0;
     }
 
-    label input:checked+.menu .hamburger:after {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        bottom: 0;
-
-    }
-
-    label input:checked+.menu .hamburger:before {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        top: 0;
-
-    }
-
-    label input:checked+.menu+ul {
-        opacity: 1;
-    }
-
-    label ul {
-        z-index: 200;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        -webkit-transition: .25s 0s ease-in-out;
-        transition: .25s 0s ease-in-out;
-    }
-
-    label a {
-        margin-bottom: 1em;
-        display: block;
-        color: #21618C;
-        font-weight: bold;
+    .nav li a {
+        color: #32CD32;
+        font-size: 20px;
         text-decoration: none;
-
     }
 
-    h1 {
+    .nav li a:hover {
+        font-weight: bold;
+    }
+
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 80%;
-        text-align: center;
+    }
+
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background: radial-gradient(circle, #21618C, #21618C);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: #21618C;
+    }
+
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+        width: 620px;
+        height: 560px;
+        transform: translate(-60%, -30%);
     }
 }
