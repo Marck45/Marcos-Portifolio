@@ -40,28 +40,15 @@
     margin-bottom: 5px;
 }
 
-@media only screen and (min-width: 768px ) and (max-width: 1024px) {
+@media only screen and (min-width: 768px ) and (max-width: 1440px) {
 
     .works-recently{
-        margin-top: 70px;
-    }
-
-}
-
-@media only screen and (min-width: 426px ) and (max-width: 768px) {
-
-    #works-container{
+        margin-top: 50px;
         display: flex;
-        justify-content:center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
+        justify-content: center;
         flex-wrap: nowrap;
+        width: 80%;
     }
-    .works-recently{
-        margin-top: 70px;
-    }
-
     .works-card img{
         height: 150px;
         width: 250px;
@@ -69,24 +56,63 @@
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px){
+@media only screen and (min-width: 427px ) and (max-width: 768px) {
 
     #works-container{
         display: flex;
-        justify-content:center;
+        justify-content:space-around;
         align-items: center;
+        width: 100%;
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 1000px;
+    }
+    .works-recently{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
-    .works-recently{
-        margin-top: 300px;
-        margin-bottom: 70px;
-    }
     .works-card img{
-        height: 100px;
-        width: 250px;
+        height: 150px;
+        width: 200px;
         border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 426px){
+
+    
+    #works-container{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .works-recently{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .works-card img{
+        height: 50px;
+        width: 70px;
+        border-radius: 15px;
+    }
+    .works-card p{ 
+        font-size: 8px;
+    }
+    .works-card h4{
+        font-size: 12px;
+    }
+    .works-card h5{
+        font-size: 10px;
     }
 }
