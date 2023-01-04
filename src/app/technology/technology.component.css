@@ -38,6 +38,13 @@
     color: #fff;
     border-radius: 10px;
 }
+.front-end:hover, .back-end:hover, .suports:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .front-end h3, .back-end h3, .suports h3{
     border-bottom: 1px solid #3498DB;
 }

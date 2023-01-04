@@ -31,10 +31,10 @@
     font-weight: bold;
     font-size: 18px;
 }
-.social-footer a:hover{
-background-color: #F2FDF1;
+.social-footer a:hover, .social-footer p:hover{
 color: #21618C;
-border-radius: 5px;
+-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
 .social-footer p{

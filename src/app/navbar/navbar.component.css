@@ -24,11 +24,15 @@
     text-decoration: none;
     color: #21618C;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
 .title-nav ul li a:hover {
     color: #F2F4F4;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
+
 
 @media only screen and (min-width: 1025px) and (max-width: 2560px) {
     #menu {

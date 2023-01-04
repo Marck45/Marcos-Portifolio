@@ -6,7 +6,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #32CD32;
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 100px;
     padding: 15px;
     border-bottom-left-radius: 25%;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
+    width: 50%;
 }
 .works-card{
     display: flex;
@@ -25,7 +25,12 @@
     margin-bottom:100px;
     color: #21618C;
     font-weight: bold;
-   
+}
+.works-card:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .works-card p{
     color: #4169e1;
@@ -45,9 +50,9 @@
     .works-recently{
         margin-top: 50px;
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        width: 80%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
     }
     .works-card img{
         height: 150px;
@@ -69,8 +74,8 @@
     .works-recently{
         margin-top: 50px;
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
     }
 
@@ -95,8 +100,8 @@
     .works-recently{
         margin-top: 50px;
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         text-align: center;
     }

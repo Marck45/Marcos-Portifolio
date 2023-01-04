@@ -11,7 +11,7 @@ export class MaintitleComponent implements OnInit {
 
   constructor() { 
 
-      this.marckAvatar = '/assets/img/pngwing.com (2).png';
+      this.marckAvatar = '/assets/img/giphy.gif';
 
    }
 
