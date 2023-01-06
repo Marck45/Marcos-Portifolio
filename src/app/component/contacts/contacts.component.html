@@ -1,20 +1,20 @@
 <div class="form-container">
-<form id="form-contact">
+<form id="form-contact" (ngSubmit)="btnSubmit()" [formGroup]="userForm" #formDir="ngForm">
     <div class="form-center">
         <label for="inputEmail4">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Digite seu nome">
+        <input type="text" class="form-control" id="inputName" placeholder="Digite seu nome" required>
     </div>
     <div class="form-center">
       <label for="inputAddress">E-mail</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="exemple@gmail.com">
+      <input type="text" class="form-control" id="inputEmail4" placeholder="exemple@gmail.com" required>
     </div>
     <div class="form-center">
       <label for="inputAddress2">Telefone</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="(99) 9 9999-9999">
+      <input type="text" class="form-control" id="inputAddress2" placeholder="(99) 9 9999-9999" required>
     </div>
     <div class="form-center">
       <label for="InputMensage">Mensagem</label>
-      <textarea name="mensage" id="InputMensage" cols="65" rows="3" placeholder="Digite sua mensagem"></textarea>
+      <textarea name="mensage" id="InputMensage" cols="65" rows="3" placeholder="Digite sua mensagem" required></textarea>
     </div>
     <button id="submit-contact" type="submit" class="btn btn-primary">Enviar</button>
   </form>

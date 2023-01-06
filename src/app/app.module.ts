@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
 import { Router, RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { ContactsComponent } from './component/contacts/contacts.component';
 import { LoaderModule } from './loader/loader.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -32,7 +36,10 @@ import { LoaderModule } from './loader/loader.module';
     FontAwesomeModule,
     CommonModule,
     RouterModule,
-    LoaderModule
+    LoaderModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

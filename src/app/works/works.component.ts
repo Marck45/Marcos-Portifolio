@@ -21,7 +21,7 @@ export class WorksComponent implements OnInit {
     this.imagePath1 = '/assets/img/work1.png';
     this.imagePath2 = '/assets/img/work2.png';
     this.imagePath3 = '/assets/img/work3.png';
-    this.imagePath4 = '/assets/img/work3.png';
+    this.imagePath4 = '/assets/img/work4.PNG';
     this.work1 = 'https://www.cursoseducativa.com.br';
     this.work2 = 'https://github.com/Marck45/CRUD-Angular';
     this.work3 = 'https://github.com/Marck45/Calculadora-JS';
